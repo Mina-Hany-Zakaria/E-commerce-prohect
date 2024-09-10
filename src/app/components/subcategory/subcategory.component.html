@@ -1,0 +1,13 @@
+<section class="w-75 mx-auto p-3 my-5">
+  <div class="row g-3">
+    <h1 class="text-main text-center">Subcategory....</h1>
+    @for (item of getSpecificCategory(); track $index) {
+
+    <div class="col-md-4">
+      <div class="subcategory-card">
+        <h2 class="text-center">{{ item.name }}</h2>
+      </div>
+    </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<section class="my-5 w-75 mx-auto p-3">
+  <div class="row g-4">
+    @for (cat of AllCategories(); track $index) {
+
+    <div class="col-md-4">
+      <div [routerLink]="['/subcategory', cat._id]" class="category-card my-3">
+        <img [src]="cat.image" height="300px" class="w-100" alt="" />
+        <h3 class="h6 text-main text-center fs-4">{{ cat.name }}</h3>
+      </div>
+    </div>
+    }
+  </div>
+</section>

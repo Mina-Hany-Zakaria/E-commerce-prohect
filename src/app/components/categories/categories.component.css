@@ -1,0 +1,12 @@
+.category-card {
+  box-shadow: 0 0 1px black;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.category-card img {
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+}
+.category-card:hover {
+  box-shadow: 0 0 10px #11bd1168;
+}
